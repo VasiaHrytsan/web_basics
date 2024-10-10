@@ -3,8 +3,13 @@ i, em, span, b, strong {
     text-decoration: underline;
 }
 
-ol, ul {
+ ul {
     border: 1px solid lightcoral;
+}
+
+ol{
+    border: 1px solid green;
+
 }
 
 img {
