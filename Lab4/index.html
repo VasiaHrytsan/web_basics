@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Моя перша HTML-форма</h1>
+    <form action="https://httpbin.org/post" method="post">
+      
+        <label for="name">Ім'я:</label>
+        <input id="_name" type="text" name="user_name" />
+        <br>
+        <label for="date">Дата народження:</label>
+        <input id="_date" type="date" name="user_brithdate" />
+        <br>
+        <label for="email">Імейл:</label>
+        <input id="_mail" type="email" name="user_mail" />
+        <br>
+        <label for="messege">Повідомлення:</label>
+        <input id="_messege" type="text" name="user_messege" />
+        <br>
+        <label for="checkbox">Ваші улюблені напої:</label>
+         <br>
+         кава<input id="coffee" type="checkbox" name="coffee">
+         <br>
+         чай<input id="tea" type="checkbox" name="tea">
+         <br>
+         вода<input id="water" type="checkbox" name="water">
+         <br>
+         фанта<input id="fanta" type="checkbox" name="fanta">
+        <br>
+        <label for="radiobutton">Моя національність:</label>
+        <br>
+        Українець<input value="UA" id="UA" type="radio"  name="nationality">
+        <br>
+        Американець<input value="USA" id="USA" type="radio" name="nationality">
+        <br>
+        Німець<input value="GE" id="GE" type="radio" name="nationality">
+        <br>
+        <button>Надіслати</button>
+        
+    </form>
+    <button onclick="clearInput()">Очистити</button>
+<br>
+    <picture>
+        <source media="(max-width: 799px)" srcset="564-300x500.jpg">
+        <source media="(min-width: 800px)" srcset="943-1000x400.jpg">
+        <img  src="943-1000x400.jpg" alt="">
+     </picture>
+
+</body> 
+</html>
