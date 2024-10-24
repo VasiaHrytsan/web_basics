@@ -11,16 +11,19 @@
     <h1>Моя перша HTML-форма</h1>
     <form action="https://httpbin.org/post" method="post">
       
-        <label for="name">Ім'я:</label>
-        <input id="_name" type="text" name="user_name" />
+        <label>Ім'я: 
+            <input  type="text" name="user_name" />
+        </label>
+        
+        
         <br>
-        <label for="date">Дата народження:</label>
+        <label for="_date">Дата народження:</label>
         <input id="_date" type="date" name="user_brithdate" />
         <br>
-        <label for="email">Імейл:</label>
+        <label for="_mail">Імейл:</label>
         <input id="_mail" type="email" name="user_mail" />
         <br>
-        <label for="messege">Повідомлення:</label>
+        <label for="_messege">Повідомлення:</label>
         <input id="_messege" type="text" name="user_messege" />
         <br>
         <label for="checkbox">Ваші улюблені напої:</label>
@@ -41,10 +44,10 @@
         <br>
         Німець<input value="GE" id="GE" type="radio" name="nationality">
         <br>
-        <button>Надіслати</button>
-        
+        <button type="submit">Надіслати</button>
+        <button  type="reset">Очистити</button>
     </form>
-    <button onclick="clearInput()">Очистити</button>
+    
 <br>
     <picture>
         <source media="(max-width: 799px)" srcset="564-300x500.jpg">
